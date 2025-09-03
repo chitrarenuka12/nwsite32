@@ -1,0 +1,696 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.about-us-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+  color: #ffffff;
+}
+
+.dark-mode .mission-section,
+.dark-mode .vision-section,
+.dark-mode .story-section,
+.dark-mode .timeline-section,
+.dark-mode .expertise-section,
+.dark-mode .experts-section {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .vision-item,
+.dark-mode .vision-stat-item,
+.dark-mode .timeline-content-vertical {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+}
+
+.dark-mode .expert-card,
+.dark-mode .expertise-item {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .expertise-title,
+.dark-mode .vision-feature-content h4 {
+  color: #007bff;
+}
+
+/*------------------
+  Hero Section
+------------------*/
+.hero-container-about {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video-about {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.video-overlay-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 30, 40, 0.55);
+  z-index: 2;
+}
+
+.hero-content-about {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Common Section Styles */
+.container-vision{
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+/*------------------
+  Section 2: Our Mission
+------------------*/
+.mission-section {
+  background-color: #f7f9fc;
+  padding: 10px 0 !important;
+}
+
+.mission-layout {
+  display: flex;
+  align-items: stretch;
+  gap: 4rem;
+  min-height: 350px;
+}
+
+.mission-image-container {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  margin-left: 30px; /* <-- Adds gap at left side of image */
+}
+
+.mission-photo {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 350px;
+  padding: 0 20px;
+}
+
+.mission-title {
+  text-align: left;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+/*------------------
+  Section 3: Our Vision
+------------------*/
+.vision-section {
+ 
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0 !important; /* Only 10px gap above and below */
+}
+
+.vision-section.animate .vision-content {
+  animation: fadeInUp 1s forwards;
+}
+
+.vision-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 350px; /* Ensures equal height for both sides */
+}
+
+.vision-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.dark-mode .vision-text h3 {
+  color: #ffffff;
+}
+
+.vision-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.dark-mode .vision-text p {
+  color: #e0e0e0;
+}
+
+.vision-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vision-feature {
+  display: flex;
+  align-items: center; /* Align icon and content at the same vertical start */
+  gap: 1rem;
+}
+
+.vision-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.vision-feature-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.dark-mode .vision-feature-content h4 {
+  color: #ffffff;
+}
+
+.vision-feature-content p {
+  color: #666;
+  margin: 0;
+}
+
+.dark-mode .vision-feature-content p {
+  color: #e0e0e0;
+}
+
+.vision-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.vision-stat-item {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-stat-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,123,255,0.1) 0%, rgba(0,123,255,0.05) 100%);
+  z-index: 0;
+}
+
+.vision-stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.dark-mode .vision-stat-item {
+  background: #2d2d2d;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+.dark-mode .stat-title {
+  color: #ffffff;
+}
+
+.stat-description {
+  color: #666;
+  position: relative;
+  z-index: 1;
+  font-size: 0.9rem;
+}
+
+.dark-mode .stat-description {
+  color: #e0e0e0;
+}
+
+/*------------------
+  Section 4: Our Story
+------------------*/
+.story-section {
+  background-color: #fff;
+  position: relative;
+  padding: 20px 0 !important; /* Decreased space at top and bottom */
+}
+
+.story-section.animate .timeline-item-vertical {
+  animation: fadeInRight 1s forwards;
+  animation-delay: calc(0.2s * var(--item-index));
+}
+
+.timeline-vertical {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.timeline-vertical::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 90%;
+  width: 4px;
+  background: #007bff;
+}
+
+.timeline-item-vertical {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  --item-index: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  z-index: 2;
+}
+
+.timeline-content-vertical {
+  background: #f7f9fc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  margin-left: 2rem;
+}
+
+.timeline-item-vertical:hover .timeline-content-vertical {
+  transform: translateY(-5px);
+}
+
+.timeline-year {
+  position: absolute;
+  top: -15px;
+  background: #007bff;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.timeline-content-vertical h3 {
+  color: #007bff;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.5rem;
+}
+
+.timeline-content-vertical p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.dark-mode .timeline-content-vertical {
+  background: #2d2d2d;
+}
+
+.dark-mode .timeline-content-vertical p {
+  color: #e0e0e0;
+}
+
+/*------------------
+  Section 5: Our Expertise
+------------------*/
+.expertise-section {
+  background-color: #f7f9fc;
+}
+
+.expertise-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.expertise-item {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-title {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.expertise-description {
+  color: #666;
+}
+
+.dark-mode .expertise-item {
+  background-color: #2d2d2d;
+}
+
+/*------------------
+  Section 6: Meet Our Experts
+------------------*/
+.experts-section {
+  background: #fff;
+  padding: 05px 0 !important; /* Decreased space at top and bottom */
+}
+
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.expert-card {
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.experts-section.animate .expert-card {
+  animation: fadeInSlideUp 0.8s forwards;
+  animation-delay: calc(0.2s * var(--delay-index));
+}
+
+.expert-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.expert-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+  margin-top: 2rem;
+}
+
+.expert-info {
+  padding: 1.5rem;
+}
+
+.expert-role {
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.expert-bio {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.dark-mode .expert-card {
+  background-color: #2d2d2d;
+}
+
+/*------------------
+  Section 7: Call to Action
+------------------*/
+.cta-section {
+ background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.cta-section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button.primary {
+  background: white;
+  color: #000000;
+  border: none;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button:hover {
+  transform: translateY(-5px);
+}
+
+.cta-button.primary:hover {
+  background: #f0f0f0;
+}
+
+.cta-button.secondary:hover {
+  background: white;
+  color: #007bff;
+}
+
+.cta-section.dark-mode .cta-button.primary {
+  /* background: #fff !important; */
+  color: #000 !important; /* Black text in dark mode */
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .mission-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .vision-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+  
+  .timeline-vertical {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-marker {
+    left: -1.8rem;
+  }
+
+  .story-section {
+    padding: 5px 0 !important; /* Even less space for mobile */
+  }
+
+  .experts-section {
+    padding: 12px 0 !important;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vision-section.dark-mode {
+  background: #181a1b !important;
+}
+
+.vision-section.dark-mode h2,
+.vision-section.dark-mode h3,
+.vision-section.dark-mode h4,
+.vision-section.dark-mode p,
+.vision-section.dark-mode .vision-feature-content,
+.vision-section.dark-mode .stat-title,
+.vision-section.dark-mode .stat-description {
+  color: #fff !important;
+}
+
+.vision-section.dark-mode .vision-stat-item {
+  background: #232834 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+}
+
+.vision-section.dark-mode .stat-number {
+  color: #fff !important;
+}
+
+.vision-section.dark-mode .vision-icon {
+  background: #232834 !important;
+  color: #fff !important;
+  border: 2px solid #fff;
+}
