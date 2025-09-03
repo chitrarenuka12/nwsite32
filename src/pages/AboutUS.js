@@ -2,7 +2,7 @@ import "./AboutUs.css";
 import { useNavigate } from "react-router-dom";
 import { useDarkMode } from "../context/Darkmodecontext";
 import { useLanguage } from "../context/LanguageContext";
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import  { useState, useEffect, useRef, useMemo } from 'react';
 
 const AboutUs = () => {
   const navigate = useNavigate();

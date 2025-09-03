@@ -166,7 +166,7 @@ const Header = ({ toggleTheme, isDark }) => {
     <header className="header">
       <nav className="logo">
         <Link to="/home">
-          <img src="/Images/logo.png" alt="Logo" />
+          <img src="/Images/logo111.png" alt="Logo" />
         </Link>
       </nav>
 
