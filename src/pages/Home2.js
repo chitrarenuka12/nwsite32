@@ -36,6 +36,7 @@ function Home2() {
   const [isClientsVisible, setIsClientsVisible] = useState(false);
 
   useEffect(() => {
+    const node = clientsRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -46,13 +47,13 @@ function Home2() {
       { threshold: 0.1 }
     );
 
-    if (clientsRef.current) {
-      observer.observe(clientsRef.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (clientsRef.current) {
-        observer.unobserve(clientsRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);

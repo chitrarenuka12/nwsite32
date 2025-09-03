@@ -318,9 +318,9 @@ function Home() {
             </div>
             <div className="ctaContainer">
               <Link to="/about" className="ctaButton" onClick={() => handleGetStarted("/contact")}>{translations[language].aboutBtn}</Link>
-              <a href="#" className="playButton" aria-label="Play video">
+              <Link to="#" className="playButton" aria-label="Play video">
                 <i className="fas fa-play"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className={`imageContent${aboutVisible ? " slide-in-right" : ""}`}>
@@ -384,7 +384,7 @@ function Home() {
             <div className="portfolio-content">
               <h3>{translations[language].portfolio1Title}</h3>
               <p>{translations[language].portfolio1Desc}</p>
-              <a href="#" className="portfolio-link">{translations[language].viewCaseStudy} <i className="fas fa-arrow-right"></i></a>
+              <Link to="#" className="portfolio-link">{translations[language].viewCaseStudy} <i className="fas fa-arrow-right"></i></Link>
             </div>
           </div>
           {/* Portfolio Card 2 */}
@@ -395,7 +395,7 @@ function Home() {
             <div className="portfolio-content">
               <h3>{translations[language].portfolio2Title}</h3>
               <p>{translations[language].portfolio2Desc}</p>
-              <a href="#" className="portfolio-link">{translations[language].viewCaseStudy} <i className="fas fa-arrow-right"></i></a>
+              <Link to="#" className="portfolio-link">{translations[language].viewCaseStudy} <i className="fas fa-arrow-right"></i></Link>
             </div>
           </div>
           {/* Portfolio Card 3 */}
@@ -406,7 +406,7 @@ function Home() {
             <div className="portfolio-content">
               <h3>{translations[language].portfolio3Title}</h3>
               <p>{translations[language].portfolio3Desc}</p>
-              <a href="#" className="portfolio-link">{translations[language].viewCaseStudy} <i className="fas fa-arrow-right"></i></a>
+              <Link to="#" className="portfolio-link">{translations[language].viewCaseStudy} <i className="fas fa-arrow-right"></i></Link>
             </div>
           </div>
         </div>
