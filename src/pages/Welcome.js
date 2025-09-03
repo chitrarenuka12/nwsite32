@@ -178,7 +178,7 @@ const Welcome = () => {
     <>
       <style>{`
         body {
-          background: linear-gradient(135deg, #0a0343ff 0%, #2c2c6c 100%);
+          background: linear-gradient(135deg, #007bff 0%, #007bff 100%);
         }
         .welcome-center-box {
           min-width: 440px;
@@ -212,7 +212,7 @@ const Welcome = () => {
           alignItems: "center",
           justifyContent: "center",
           fontFamily: "Arial, sans-serif",
-          background: "linear-gradient(135deg, #0a0343ff 0%, #2c2c6c 100%)",
+          background: "linear-gradient(135deg, #007bff 0%, #007bff 100%)",
         }}
       >
         <div className="welcome-center-box">
@@ -375,7 +375,7 @@ const styles = {
     marginBottom: "10px",
   },
   highlight: {
-    color: "#0a0343ff",
+    color: "#007bff",
   },
   welcomeSubtext: {
     marginBottom: "30px",
@@ -395,7 +395,7 @@ const styles = {
     transition: "border-color 0.3s",
   },
   loginButton: {
-    backgroundColor: "#0a0343ff",
+    backgroundColor: "#007bff",
     color: "#fff",
     fontWeight: "bold",
     border: "none",
@@ -406,14 +406,14 @@ const styles = {
   },
   forgotPassword: {
     textAlign: "right",
-    color: "#090628ff",
+    color: "#007bff",
     cursor: "pointer",
     fontSize: "14px",
     marginTop: "-10px",
   },
   toggle: {
     cursor: "pointer",
-    color: "#0a0343ff",
+    color: "#007bff",
     marginTop: "15px",
     textAlign: "center",
     userSelect: "none",
