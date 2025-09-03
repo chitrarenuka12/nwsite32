@@ -205,7 +205,7 @@ const translations = {
       { value: "45%", label: "הפחתת עלות רכישה" }
     ],
     spotlightQuote: '"אסטרטגיית ה-SEO של הצוות שינתה את הנוכחות שלנו אונליין. אנחנו מדורגים על מילות מפתח תחרותיות ומקבלים לידים איכותיים באופן קבוע."',
-    spotlightAuthor: "- שרה ג\'ונסון, מנהלת שיווק ב-TechStart",
+    spotlightAuthor: "- שרה ג'ונסון, מנהלת שיווק ב-TechStart",
     processHeading: "תהליך ה-SEO המוכח שלנו",
     processSubheading: "מהבדיקה הראשונית ועד אופטימיזציה מתמשכת, אנו מלווים אותך בכל שלב לתוצאות מתמשכות.",
     processSteps: [

@@ -439,7 +439,7 @@ const Blog = () => {
                     <li key={idx}>{point}</li>
                   ))}
                 </ul>
-                <a href="#" className="story-link">{t.stories[activeStory].link}</a>
+                <Link to="#" className="story-link">{t.stories[activeStory].link}</Link>
               </div>
             </div>
           </div>

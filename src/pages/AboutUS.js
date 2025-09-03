@@ -19,7 +19,7 @@ const AboutUs = () => {
   const [isVisionVisible, setIsVisionVisible] = useState(false);
   const visionRef = useRef(null);
 
-  const [isStoryVisible, setIsStoryVisible] = useState(false);
+  const [ setIsStoryVisible] = useState(false);
   const storyRef = useRef(null);
   const [storyAnimated, setStoryAnimated] = useState(false); // <-- Add this
 
@@ -67,28 +67,28 @@ const AboutUs = () => {
     if (expertsRef.current) expertsObserver.observe(expertsRef.current);
 
     // Cleanup observers
-    return () => {
-      if (missionRef.current) missionObserver.unobserve(missionRef.current);
-      if (visionRef.current) visionObserver.unobserve(visionRef.current);
-      if (storyRef.current) storyObserver.unobserve(storyRef.current);
-      if (expertsRef.current) expertsObserver.unobserve(expertsRef.current);
-    };
-  }, []);
+    // return () => {
+    //   if (missionRef.current) missionObserver.unobserve(missionRef.current);
+    //   if (visionRef.current) visionObserver.unobserve(visionRef.current);
+    //   if (storyRef.current) storyObserver.unobserve(storyRef.current);
+    //   if (expertsRef.current) expertsObserver.unobserve(expertsRef.current);
+    // };
+  },);
 
-  const expertiseData = [
-    { title: 'Search Engine Optimization', description: 'Boost your visibility and rank higher with our data-driven SEO strategies.' },
-    { title: 'Pay-Per-Click Management', description: 'Drive immediate traffic and maximize your ROI with targeted ad campaigns.' },
-    { title: 'Social Media Marketing', description: 'Build a powerful brand presence and engage with your audience across all platforms.' },
-    { title: 'Content & Inbound Marketing', description: 'Attract, convert, and delight customers with valuable content tailored to their needs.' },
-    { title: 'Web Design & Development', description: 'Create stunning, responsive websites that not only look great but also perform flawlessly.' },
-    { title: 'Email Marketing', description: 'Nurture leads and build lasting customer relationships with automated email campaigns.' }
-  ];
+  // const expertiseData = [
+  //   { title: 'Search Engine Optimization', description: 'Boost your visibility and rank higher with our data-driven SEO strategies.' },
+  //   { title: 'Pay-Per-Click Management', description: 'Drive immediate traffic and maximize your ROI with targeted ad campaigns.' },
+  //   { title: 'Social Media Marketing', description: 'Build a powerful brand presence and engage with your audience across all platforms.' },
+  //   { title: 'Content & Inbound Marketing', description: 'Attract, convert, and delight customers with valuable content tailored to their needs.' },
+  //   { title: 'Web Design & Development', description: 'Create stunning, responsive websites that not only look great but also perform flawlessly.' },
+  //   { title: 'Email Marketing', description: 'Nurture leads and build lasting customer relationships with automated email campaigns.' }
+  // ];
 
   const teamData = [
-    { name: 'John Doe', role: 'CEO & Founder', image: '/images/team-john.jpg', bio: 'Visionary leader with a passion for innovation. John has over 15 years of experience in digital strategy and business development.' },
-    { name: 'Jane Smith', role: 'Lead Designer', image: '/images/team-jane.jpg', bio: 'A creative powerhouse specializing in user-centric design and brand identity. Jane brings ideas to life with stunning visuals.' },
-    { name: 'Michael Chen', role: 'Senior Developer', image: '/images/team-michael.jpg', bio: 'Our technical guru, Michael builds robust and scalable web applications. He is an expert in modern front-end and back-end frameworks.' },
-    { name: 'Sarah Lee', role: 'Marketing Strategist', image: '/images/team-sarah.jpg', bio: 'Sarah is a data-driven marketer who crafts compelling campaigns that deliver measurable ROI and connect with target audiences.' }
+    { name: 'John Doe', role: 'CEO & Founder', image: '/images/team1.jpg', bio: 'Visionary leader with a passion for innovation. John has over 15 years of experience in digital strategy and business development.' },
+    { name: 'Jane Smith', role: 'Lead Designer', image: '/images/team2.jpg', bio: 'A creative powerhouse specializing in user-centric design and brand identity. Jane brings ideas to life with stunning visuals.' },
+    { name: 'Michael Chen', role: 'Senior Developer', image: '/images/team3.jpg', bio: 'Our technical guru, Michael builds robust and scalable web applications. He is an expert in modern front-end and back-end frameworks.' },
+    { name: 'Sarah Lee', role: 'Marketing Strategist', image: '/images/team4.jpg', bio: 'Sarah is a data-driven marketer who crafts compelling campaigns that deliver measurable ROI and connect with target audiences.' }
   ];
 
   // Vision data
@@ -111,28 +111,28 @@ const AboutUs = () => {
   ];
 
   // Story timeline data
-  const timelineData = [
-    {
-      year: "2015",
-      title: "The Beginning",
-      description: "Founded as a small startup with a big idea: to make high-end digital marketing accessible to all businesses."
-    },
-    {
-      year: "2018",
-      title: "Rapid Expansion",
-      description: "We grew our team from a handful of experts to a full-service agency, expanding our offerings to include SEO and PPC."
-    },
-    {
-      year: "2021",
-      title: "Industry Recognition",
-      description: "Our work on several key projects earned us 'Agency of the Year' for our innovative and results-driven campaigns."
-    },
-    {
-      year: "2024",
-      title: "Global Reach",
-      description: "We opened our first international office, marking a new chapter in our mission to help brands succeed worldwide."
-    }
-  ];
+  // const timelineData = [
+  //   {
+  //     year: "2015",
+  //     title: "The Beginning",
+  //     description: "Founded as a small startup with a big idea: to make high-end digital marketing accessible to all businesses."
+  //   },
+  //   {
+  //     year: "2018",
+  //     title: "Rapid Expansion",
+  //     description: "We grew our team from a handful of experts to a full-service agency, expanding our offerings to include SEO and PPC."
+  //   },
+  //   {
+  //     year: "2021",
+  //     title: "Industry Recognition",
+  //     description: "Our work on several key projects earned us 'Agency of the Year' for our innovative and results-driven campaigns."
+  //   },
+  //   {
+  //     year: "2024",
+  //     title: "Global Reach",
+  //     description: "We opened our first international office, marking a new chapter in our mission to help brands succeed worldwide."
+  //   }
+  // ];
   
   // Animated numbers for vision stats
   const [visionCounts, setVisionCounts] = useState(visionData.map(() => 0));
